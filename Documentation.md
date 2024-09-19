@@ -6,7 +6,7 @@ Bu proje, katmanlı mimari ve SOLID prensipleri dikkate alınarak geliştirilmi�
 - **API**: İstemci isteklerini alır ve iş mantığını uygular.
 - **Application**: İş mantığı ve veri transfer objeleri (DTO) burada bulunur.
 - **Persistence**: Veritabanı erişimi Entity Framework Core aracılığıyla burada gerçekleştirilir.
-- **Infrastructure**: Harici servisler (e-posta gönderimi, loglama gibi) burada yer alır.
+- **Infrastructure**: Harici servisler (e-posta gönderimi gibi) burada yer alır.
 - **Core**: Temel yapı taşları ve arayüzleri içerir.
 
 # Kullanılan Teknolojiler
