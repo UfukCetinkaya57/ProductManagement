@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    environment:
+      - SA_PASSWORD=YourStrong!Password
+      - ACCEPT_EULA=Y
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # init.sql dosyasını bağla
+
+  productmanagement.api:
+    build:
+      context: .
+      dockerfile: ProductManagement.API/Dockerfile
+    container_name: productmanagement.api
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:DefaultConnection=Server=sqlserver,1433;Database=ProductManagementDB;User=sa;Password=YourStrong!Password;Encrypt=False;TrustServerCertificate=True;"
+    depends_on:
+      - sqlserver
+
+
+volumes:
+  sql_data:
