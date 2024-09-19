@@ -16,7 +16,7 @@ This project is a Product Management API built using ASP.NET Core and follows th
 
 ## Prerequisites
 
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Docker](https://www.docker.com/get-started)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
