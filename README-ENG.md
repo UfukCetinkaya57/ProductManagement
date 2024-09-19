@@ -34,30 +34,30 @@ Build and run the application using Docker Compose:
 docker-compose up --build
 
 ```
-##This command will:
+## This command will:
 
 Build the API and create a Docker image.
 Start containers for the API and SQL Server.
 Automatically apply database migrations.
-###3. Access the API
+### 3. Access the API
 Once the application is running, you can access the API at:
 
 Swagger UI: http://localhost:5000/swagger
 API Base URL: http://localhost:5000/api
 
-##How to Use the API
+## How to Use the API
 Authentication
 Register or log in to obtain a JWT token.
 Include the token in the Authorization header of your requests:
 Authorization: Bearer your_jwt_token
-##Endpoints
+## Endpoints
 Products
 GET /api/products: Retrieve all products.
 GET /api/products/{id}: Retrieve a specific product.
 POST /api/products: Create a new product.
 PUT /api/products/{id}: Update an existing product.
 DELETE /api/products/{id}: Delete a product (Admin only).
-##Project Structure
+## Project Structure
 ProductManagement.API: Contains the API controllers and configuration.
 ProductManagement.Application: Contains application logic, services, and CQRS handlers.
 ProductManagement.Core: Contains the core domain entities and interfaces.
