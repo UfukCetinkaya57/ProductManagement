@@ -50,7 +50,7 @@ Aşağıdaki komut ile uygulamayı ve veritabanını container içinde başlatı
 
 bash
 Kodu kopyala
-docker-compose up
+docker-compose up --build
 Adım 4: Uygulamayı Test Edin
 Docker Compose, hem uygulama hem de SQL Server veritabanını ayrı container'larda çalıştıracaktır. Uygulamanın başarıyla çalışıp çalışmadığını test etmek için tarayıcınızı açın ve aşağıdaki URL'ye gidin:
 
