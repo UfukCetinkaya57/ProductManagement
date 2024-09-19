@@ -34,7 +34,7 @@ Build and run the application using Docker Compose:
 docker-compose up --build
 
 ```
-## This command will:
+### This command will:
 
 Build the API and create a Docker image.
 Start containers for the API and SQL Server.
