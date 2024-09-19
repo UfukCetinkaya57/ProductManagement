@@ -67,6 +67,4 @@ JWT token'ı kullanarak ürün ekleme, güncelleme ve silme işlemlerini gerçek
 Docker Container'larını Durdurmak
 Uygulamayı ve veritabanını durdurmak için:
 
-bash
-Kodu kopyala
 docker-compose down
