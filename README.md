@@ -46,4 +46,15 @@ Adım 2: Proje Dizinine Gidin
 Kodu kopyala
 cd ProductManagementAPI
 Adım 3: Docker Compose ile Uygulamayı Başlatın
-Aşağıdaki komut ile uygulamayı ve veritabanını container içinde başlatın
+Aşağıdaki komut ile uygulamayı ve veritabanını container içinde başlatın:
+
+bash
+Kodu kopyala
+docker-compose up
+Adım 4: Uygulamayı Test Edin
+Docker Compose, hem uygulama hem de SQL Server veritabanını ayrı container'larda çalıştıracaktır. Uygulamanın başarıyla çalışıp çalışmadığını test etmek için tarayıcınızı açın ve aşağıdaki URL'ye gidin:
+
+bash
+Kodu kopyala
+http://localhost:5000/swagger
+Bu, Swagger arayüzünü açacak ve API uç noktalarını test etmenizi sağlayacaktır.
