@@ -58,12 +58,12 @@ POST /api/products: Create a new product.
 PUT /api/products/{id}: Update an existing product.
 DELETE /api/products/{id}: Delete a product (Admin only).
 ## Project Structure
-ProductManagement.API: Contains the API controllers and configuration.
-ProductManagement.Application: Contains application logic, services, and CQRS handlers.
-ProductManagement.Core: Contains the core domain entities and interfaces.
-ProductManagement.Infrastructure: Contains implementations of services and repositories.
-ProductManagement.Persistence: Contains database context and migrations.
-Logging
+- ProductManagement.API: Contains the API controllers and configuration.
+- ProductManagement.Application: Contains application logic, services, and CQRS handlers.
+- ProductManagement.Core: Contains the core domain entities and interfaces.
+- ProductManagement.Infrastructure: Contains implementations of services and repositories.
+- ProductManagement.Persistence: Contains database context and migrations.
+- Logging
 The API uses Serilog for structured logging. Logs are stored in the following sinks:
 
 Console: Logs are displayed in the console.
