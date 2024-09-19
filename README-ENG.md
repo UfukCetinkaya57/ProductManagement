@@ -66,7 +66,6 @@ DELETE /api/products/{id}: Delete a product (Admin only).
 - Logging
 The API uses Serilog for structured logging. Logs are stored in the following sinks:
 
-Console: Logs are displayed in the console.
 File: Logs are written to logs/log.txt.
 SQL Server: Logs are stored in the Logs table of the database.
 Additional Notes
