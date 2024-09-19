@@ -71,3 +71,5 @@ SQL Server: Logs are stored in the Logs table of the database.
 Additional Notes
 Ensure that the SQL Server is accessible and running.
 Customize the Docker Compose file (docker-compose.yml) as needed for your environment.
+
+If you want to run it from Visual Studio, you may need to comment out folders 56 to 61 in the program.cs folder. 
