@@ -57,7 +57,7 @@ Bu, Swagger arayüzünü açacak ve API uç noktalarını test etmenizi sağlaya
 ```
 ## Kullanım
 Uygulama, ürünlerle ilgili CRUD işlemlerini ve JWT ile korunan kimlik doğrulama uç noktalarını içerir. Swagger arayüzünü kullanarak API'yi test edebilirsiniz.
-Eğer ki Visual Studiodan çalıştırmak isterseniz program.cs klasörünceki 56 ila 61. klasöre kadar yorum altına almanız gerekebilir. 
+Eğer ki Visual Studiodan çalıştırmak isterseniz program.cs dosyasındaki 56 ila 61. satıra kadar yorum altına almanız gerekebilir. 
 ## Kullanıcı Oluşturma ve Kimlik Doğrulama
 /api/auth/register uç noktasını kullanarak bir kullanıcı kaydı oluşturun.
 /api/auth/login uç noktasını kullanarak JWT token alın.
